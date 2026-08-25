@@ -1,0 +1,97 @@
+/* Employee welcome banner: official logo and institutional welcome copy. */
+.ep-welcome::before{
+  content:"";
+  position:absolute;
+  z-index:4;
+  right:30px;
+  top:20px;
+  bottom:20px;
+  width:132px;
+  border-radius:0;
+  background:url("/tamkeen-mark-metallic-cutout.png") center/contain no-repeat;
+  filter:drop-shadow(-15px 18px 13px #12163855) drop-shadow(0 0 18px #ffffff26);
+  transform:none;
+  transform-origin:50% 55%;
+}
+.ep-welcome>div:first-child{
+  width:55%;
+  margin-right:176px;
+  padding-right:24px;
+  padding-left:20px;
+}
+.ep-welcome>div:first-child>span{
+  font-size:0;
+}
+.ep-welcome>div:first-child>span::before{
+  content:"مرحبًا بكم في بوابة موظفي بيت التمكين";
+  font-size:9px;
+}
+.ep-welcome h1{
+  font-size:0;
+  max-width:570px;
+}
+.ep-welcome h1::before{
+  content:"أهلًا وسهلًا بكم، معًا نصنع أثرًا يستحق.";
+  display:block;
+  font-family:"Alexandria",sans-serif;
+  font-size:26px;
+  line-height:1.55;
+}
+.ep-welcome>div:first-child>p{
+  font-size:0;
+  max-width:600px;
+}
+.ep-welcome>div:first-child>p::before{
+  content:"مساحتكم الرقمية الموحّدة لإنجاز الطلبات، ومتابعة المهام، والاطلاع على مساركم الوظيفي بكل وضوح وسهولة.";
+  font-size:11px;
+  line-height:1.9;
+}
+
+@media(max-width:1150px){
+  .ep-welcome::before{width:118px;right:24px}
+  .ep-welcome>div:first-child{margin-right:148px;width:62%;padding-right:18px}
+  .ep-welcome h1::before{font-size:23px}
+}
+@media(max-width:800px){
+  .ep-welcome{min-height:405px;text-align:center;justify-content:center}
+  .ep-welcome::before{right:50%;transform:translateX(50%);top:18px;bottom:auto;width:85px;height:134px}
+  .ep-welcome>div:first-child{width:100%;margin:0;padding:172px 25px 25px!important;display:flex;flex-direction:column;align-items:center}
+  .ep-welcome>div:first-child>div{justify-content:center}
+  .ep-welcome h1::before{font-size:23px}
+  .ep-welcome>div:first-child>p{max-width:570px}
+}
+@media(max-width:560px){
+  .ep-welcome{min-height:420px}
+  .ep-welcome::before{top:17px;width:75px;height:118px}
+  .ep-welcome>div:first-child{padding:153px 19px 22px!important}
+  .ep-welcome h1::before{font-size:20px;line-height:1.65}
+  .ep-welcome>div:first-child>p::before{font-size:10px}
+}
+
+.ep-empty{
+  margin:18px 0 4px;
+  padding:18px;
+  border:1px dashed #d9dcea;
+  border-radius:11px;
+  background:#fafbfe;
+  color:#858a9d;
+  text-align:center;
+  font-size:10px;
+}
+
+.ep-access-denied{
+  min-height:100vh;
+  padding:35px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:radial-gradient(circle at 50% 30%,#f1f2fb 0,#f8f9fc 45%,#eef0f7 100%);
+  color:#252941;
+}
+.ep-access-denied img{width:64px;height:104px;object-fit:contain;filter:drop-shadow(0 10px 12px #2e358f25)}
+.ep-access-denied h1{font-family:"Cairo","Alexandria",sans-serif;font-size:25px;margin:17px 0 6px;color:#2e358f}
+.ep-access-denied p{max-width:520px;margin:0;color:#74798d;font-size:13px;line-height:1.9}
+.ep-access-denied form{margin-top:20px}.ep-access-denied button{border:0;background:#2e358f;color:#fff;padding:9px 18px;border-radius:10px;font-size:12px;font-weight:700}
+.ep-side-bottom form{margin:0}.ep-side-bottom .ep-signout{width:100%;border:1px solid #e5e7ef;background:#fff;color:#73788d;border-radius:9px;padding:8px;text-align:center;font-size:9px;font-weight:700}.ep-side-bottom .ep-signout:hover{border-color:#e2bcbc;background:#fff8f8;color:#bd5151}

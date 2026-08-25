@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap");
+
+/* The official flat standalone mark is used in both portal sidebars. */
+.brand img,
+.ep .ep-brand img {
+  content: url("/tamkeen-mark-flat.png") !important;
+  width: 37px !important;
+  height: 60px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  filter:
+    drop-shadow(0 6px 6px rgba(34, 41, 133, 0.18))
+    drop-shadow(0 0 6px rgba(78, 91, 190, 0.1));
+  transform: translateZ(0);
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.brand strong,
+.ep .ep-brand b {
+  font-family: "Tajawal", "Alexandria", sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.25px;
+}
+
+.brand span,
+.ep .ep-brand span {
+  font-family: "Tajawal", "IBM Plex Sans Arabic", sans-serif !important;
+  font-weight: 700;
+}
+
+.brand:hover img,
+.ep .ep-brand:hover img {
+  transform: translateY(-2px) scale(1.035);
+  filter:
+    drop-shadow(0 9px 8px rgba(25, 31, 101, 0.24))
+    drop-shadow(0 0 9px rgba(78, 91, 190, 0.2));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand img,
+  .ep .ep-brand img {
+    transition: none;
+  }
+}

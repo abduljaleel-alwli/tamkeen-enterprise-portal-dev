@@ -1,0 +1,3 @@
+.user form{margin:0;display:flex}
+.user .logout-button{width:30px;height:30px;border:0;background:transparent;border-radius:8px;color:#8b90a3;transition:background .18s,color .18s}
+.user .logout-button:hover{background:#fff0f0;color:#c95454}
