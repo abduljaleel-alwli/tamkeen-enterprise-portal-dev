@@ -17,13 +17,13 @@
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
-    "next": "16.2.6",
+    "next": "16.3.4",
     "pdf-lib": "^1.17.1",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
+    "@cloudflare/vite-plugin": "1.54.7",
     "@tailwindcss/postcss": "4.2.1",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
@@ -38,7 +38,7 @@
     "typescript": "5.9.3",
     "vinext": "0.0.50",
     "vite": "8.0.13",
-    "wrangler": "4.92.0"
+    "wrangler": "4.131.0"
   },
   "type": "module",
   "displayName": "\u0628\u0648\u0627\u0628\u0629 \u0628\u064a\u062a \u0627\u0644\u062a\u0645\u0643\u064a\u0646 \u2014 \u0627\u0644\u0628\u064a\u0626\u0629 \u0627\u0644\u062a\u062c\u0631\u064a\u0628\u064a\u0629"
